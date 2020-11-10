@@ -17,6 +17,15 @@ let summ = function(one, two)
     let sumation = one + two
     return sumation
 }
-let result = summ(19,10)
-console.log(result);
-console.log(summ(19,10));
+// let result = summ(19,10)
+// console.log(result);
+// console.log(summ(19,10));
+let myMultiplier = function (one1, two2){
+    return one1*two2
+}
+
+// console.log(myMultiplier(23,10));
+let guestUser = function(name = 'Sheila', coursecount){
+    return 'Hello ' + name + ', your course count is ' + coursecount
+}
+console.log(guestUser('Noella',99));
