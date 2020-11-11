@@ -29,7 +29,7 @@ console.log(Array1);
 console.log('_____________________________');
 
 //searching muriyi array nimba harimo 20 ukoresheje method bita find ukoresheje na foreach loop 
-if (Array1.find(twenty => twenty == 50)) {
+if (Array1.find(twenty => twenty == 20)) {
     Array1.forEach(element => console.log(element));
     console.log("20 found");
     console.log('_____________________________');
