@@ -1,12 +1,12 @@
 //This is assignment number 2 about Array
 //Create this Array [1,1001,10,50,600,700]
-let Array1 = [1,1001,10,50,600,700]
+let Array1 = [1,3,1001,10,50,600,700]
 console.log(`the array I am using is ${Array1}`);
 //print length yiyo array
 console.log(` The lenght is ${Array1.length}`);
 console.log('_____________________________');
 //sorting iyi array by ascending order
-console.log(`Ascending Order: ${Array1.sort()}`);
+console.log(`Ascending Order: ${Array1.sort((a , b) => a - b)}`);
 console.log('_____________________________');
 //ongeramo ikintu kuriyi array ukoresheje method push
 console.log(`I am adding something on ${Array1.push(10000)}th index in the array`);
@@ -29,7 +29,7 @@ console.log(Array1);
 console.log('_____________________________');
 
 //searching muriyi array nimba harimo 20 ukoresheje method bita find ukoresheje na foreach loop 
-if (Array1.find(twenty => twenty == 20)) {
+if (Array1.find(twenty => twenty == 50)) {
     Array1.forEach(element => console.log(element));
     console.log("20 found");
     console.log('_____________________________');
