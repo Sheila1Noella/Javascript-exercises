@@ -1,5 +1,5 @@
 let One = 22
-let Two = 4
+let Two = 7
 
 result = One/Two
 let floatResult = result.toFixed(2);
