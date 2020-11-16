@@ -43,6 +43,10 @@ for (let i = 0; i < arr.length; i++) {
 let pos = numarray.indexOf()
 console.log(`the longest string has ${Math.max.apply(null, numarray)} characters`);
 // function that takes a string and returns the character that is most commonly used in the string
+let mostused = 'Noella'
+let spl = mostused.split("");
+console.log(spl);
+
 let shee = "onetwothreefour"
 let ssp = Arrays.split("");
 console.log(ssp) 
@@ -51,10 +55,16 @@ console.log(ssp)
 
 let facto = function(myfact){
     let f = 1
+    if (myfact == 0) {
+
+        return `factorial of ${myfact} does not exist`
+    }
+    else{
     for (let i = myfact; i > 1; i--) {
         f =f*i
     }
     return f
+}
 }
 console.log(facto(5));
 // lagest string in array
