@@ -42,15 +42,31 @@ for (let i = 0; i < arr.length; i++) {
 }
 let pos = numarray.indexOf()
 console.log(`the longest string has ${Math.max.apply(null, numarray)} characters`);
+console.log("_______________________________________________________________");
 // function that takes a string and returns the character that is most commonly used in the string
-let mostused = 'Noella'
-let spl = mostused.split("");
-console.log(spl);
 
 let shee = "onetwothreefour"
-let ssp = Arrays.split("");
-console.log(ssp) 
+let x = 1
+let y = 0
+let z
+let ssp = shee.split("").sort().join("");
+console.log(ssp)
+for (let ssp1 = 0; ssp1 < ssp.length; ssp1++) {
+    for (let ssp2 = ssp1; ssp2 < ssp.length; ssp2++) {
+        if (ssp[ssp1] == ssp[ssp2]) 
+            y++;
+            if (x<y) {
+                x=y;
+                z = ssp[ssp1];
+            } 
+        }
+        y = 0;
+   
+}
+    console.log(`${z} is the most commonly used in ${shee}`);
 
+
+console.log("_______________________________________________________________");
 // recursion function of factorial number
 
 let facto = function(myfact){
