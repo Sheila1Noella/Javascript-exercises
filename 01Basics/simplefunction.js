@@ -26,4 +26,4 @@ let MyGrade = function(currentgrades, totalgrades) {
     return `Your grades is ${Grades} and percentage is ${myPercent}`
 }
 let yourResult = MyGrade(90,150)
-console.log(yourResult);
+console.log(yourResult); 
