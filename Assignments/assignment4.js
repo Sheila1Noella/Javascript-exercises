@@ -1,6 +1,6 @@
-const data = { username: 'pharmacy'};
 function getItems() {
-    fetch("http://ineza.ishyiga.com/pharmacy/closedOrder.php")
-    .then(response => response.json())
-    .then(data => console.log(data));
+    fetch("https://reqres.in/api/users?page=2").then(response => {
+        console.log(response)
+    })
 }
+getItems()
