@@ -26,7 +26,7 @@ const finding = function(mytdo, title) {
     
 }
 let printMe = finding(newTodos, "pushing on github")
-console.log(printMe);
+           con         sole.log(printMe);
 console.log("___________________________________");
 //Method 2
 const findTodo = function(myTodos, title) {

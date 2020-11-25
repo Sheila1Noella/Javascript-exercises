@@ -24,6 +24,7 @@ console.log("________________________");
 const cameras = {
     price: 600,
     weight: 2000,
+    //Arrow function can't work in the objects
     myDes: function() {
         return `this canon camera is of ${this.price}$`
         
