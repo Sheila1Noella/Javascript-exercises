@@ -38,7 +38,7 @@ for(const [key, value] of users.entries())
     console.log("________________________");
 }
 users.forEach((value, key) => console.log(key + '='+ value.name))
-
+//Array of arrays (multidimensional array)
 var arrofarr = [['one','1'], ['two','2'], ['three','3']]
 var newMap = new Map(arrofarr)
 console.log(newMap);
