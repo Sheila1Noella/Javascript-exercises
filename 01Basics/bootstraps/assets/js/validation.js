@@ -13,38 +13,35 @@
 // wongereho aga close kuri message iturutse muri javescript
 // koresha loop werekana ibintu byose bitari valid
 
-function validation(){  
+// document.getElementById('btnregister').addEventListener('click', function(){  
+    function validation(){
+    const fname = document.querySelector('#fname')
+    const lname = document.querySelector('#lname')
     const pnumber = document.querySelector('#pnum')
     const nationalid = document.querySelector('#nid')
-    const password = document.querySelector('#pwd')
+    const password = document.querySelector('#pwd') 
     const cpassword = document.querySelector('#cpwd')
-    if(pnumber.value.length !== 10){
-        // alert("ntago yuzuye");
-        //   document.getElementById("message").innerHTML="<div  class='alert alert-danger'>Phone Number not exit</div>";
-        // setTimeout(function(){ 
-            // var myWindow = window.open("", "", "width=200, height=100");
-            // myWindow.document.write("<p>This is 'myWindow'</p>");
-            // setTimeout(function(){ myWindow.close() }, 3000);    
+    if(pnumber.value.length !== 10){ 
         document.getElementById("message").innerHTML="<div  class='alert alert-danger'>Phone Number not exit</div>"
-        setTimeout(function(){window.location.reload()}, 3000);
-        //  }, 3000);
-        
+        // setTimeout(function(){window.location.reload()}, 3000);        
+        }
+    else if(fname.value === lname.value){
+            document.getElementById("message".innerHTML)="<div class='alert alert-success'>Lastname and firstname must not be the same</div>"
+            // setTimeout(function(){window.location.reload()}, 3000);
         }
     else if (nationalid.value.length !== 16) {
         document.getElementById("message").innerHTML="<div  class='alert alert-danger'>ID Number not exit</div>"
-        setTimeout(function(){window.location.reload()}, 3000);
+        // setTimeout(function(){window.location.reload()}, 3000);
+    }
+    else if(password.value !== cpassword.value || password.value.length <= 8){
+        document.getElementById("message").innerHTML="<div class='alert alert-danger'>Please use more than 8 characters and the use same password</div>"
+        // setTimeout(function(){window.location.reload()}, 3000);
     }
     else{
         document.getElementById("message").innerHTML="<div class='alert alert-success'>validation passed successful</div>"
         setTimeout(function(){window.location.reload()}, 3000);
     }
-    // else if(password !== cpassword){
-        
-    // }
-    // else{
-        
-    // }
     
     
 }
-  
+// validation();
