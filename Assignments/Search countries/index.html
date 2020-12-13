@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH REGION</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-11 m-auto">
+                <p>Where are you from?</p></div>
+                <!-- style="margin-left:50px;text-align:center;padding:10px;float: left -->
+                <div class="col-sm-1 m-auto">
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="changemode()">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon fa-1x"></i>
+                <i class="fas fa-sun fa-1x"></i>
+                <div class="ball"></div>
+            </label>
+            <!-- <button onclick="changemode()">change</button> -->
+               </div>
+            <div class="form-group">
+                <input type="text" id="search" class="form-control-lg" placeholder="Search for a country... ">
+            <div id="match-list"></div></div>
+            
+        </div>
+    </div>
+
+
+
+   
+    <script src="search_countries.js"></script> 
+</body>
+</html>
