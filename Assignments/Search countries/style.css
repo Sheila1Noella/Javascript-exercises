@@ -1,8 +1,27 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+*{
+    box-sizing: border-box;
+}
 body{
     padding: 25px;
     background-color: white;
-    color: black;
+    color:grey;
     font-size: 25px;
+}
+header{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 30px;
+}
+.img{
+    width: 100%;
 }
 .dark-mode{
     background-color: rgb(11, 6, 85);
@@ -42,4 +61,58 @@ body{
 }
 .fa-sun{
     color: #f1c40f;
+}
+.search{
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+    min-width: 300px;
+}
+/* drop down styling */
+.dropdown{
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 25px;
+    position: relative;
+}
+.dropdown .fa-chevron-down{
+    margin-left: 10px;
+}
+.dropdown ul{
+    padding: 20px;
+    background-color: #fff;
+    display: none;
+    border-radius: 4px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+}
+.dropdown.open ul{
+    display: block;
+}
+.dropdown ul li{
+    margin: 5px 0;
+}
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    max-width: 300px;
+    cursor:pointer;
+    margin: 40px;
+} 
+.card-body{
+    padding: 30px;
+}
+.card-body h2{
+    margin-top:0;
+}
+.countries{
+    justify-content: center;
 }
