@@ -2,12 +2,17 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --backrgound-el: hsl(0, 0%, 100%)
+
+}
 body{
     padding: 25px;
     background-color: white;
     color:grey;
     font-size: 25px;
 }
+
 header{
     background-color: hsl(0, 0%, 100%);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
@@ -15,6 +20,7 @@ header{
 }
 .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 1440px;
@@ -22,10 +28,11 @@ header{
 }
 .img{
     width: 100%;
+    height: 100%;
 }
 .dark-mode{
-    background-color: rgb(11, 6, 85);
-    color:white;
+    background-color:hsl(207, 26%, 17%);
+    --backrgound-el: hsl(0, 0%, 100%)
 }
 .checkbox{
     opacity: 0;
@@ -99,20 +106,23 @@ header{
     margin: 5px 0;
 }
 .card {
-    background-color: #fff;
+    background-color: rgb(31, 21, 21);
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
     overflow: hidden;
     max-width: 300px;
     cursor:pointer;
-    margin: 40px;
+    margin: 20px;
 } 
 .card-body{
     padding: 30px;
+    
 }
 .card-body h2{
     margin-top:0;
 }
+
 .countries{
     justify-content: center;
+
 }
