@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEARCH COUNTRIES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+    <div class="container">
+                <h1>Where are you from?</h1>
+                <!-- style="margin-left:50px;text-align:center;padding:10px;float: left -->
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="changemode()">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon fa-1x"></i>
+                <i class="fas fa-sun fa-1x"></i>
+                <div class="ball"></div>
+            </label></div></header>
+            <!-- <button onclick="changemode()">change</button> -->
+            <section>
+            <div class="container" class="search" style="box-shadow: 2px 2px 2px black;border-radius: 5px;">
+                <!-- <i class="fa fa-search fa-2x ml-1 mb-1"></i> -->
+                <input type="text" id="search" class="form-control-lg" placeholder="Search for a country... ">
+            <div id="match-list"></div>
+
+
+            <div class="dropdown form-control-lg" id="filter">Filter by Region
+                <i class="fas fa-chevron-down"></i>
+                <ul>
+                    <li>Africa</li>
+                    <li>Americas</li>
+                    <li>Assia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+        </section>
+<!-- styling the last assignment -->
+        <div class="modal" id="modal">
+            <div>
+                <div class="container">
+                    <button id="close" class="btn-close">
+                        <i class="fas fa-times"></i></button>
+                    <img src="" alt="">
+                    <div class="modal-body">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container" id="countries">
+                <h2>Countries Loading ...</h2>
+
+
+
+                <!-- <div class="card">
+                     <div class="country-header">
+                        <img src="https://restcountries.eu/data/deu.svg" style="width: 300px;height:200px;" alt="Germany">
+                    </div>
+                    <div class="card-body">
+                    <h2>Germany</h2>
+                    <p><strong>Population: </strong>677766</p>
+                    <p><strong>Region:</strong>Africa</p>
+                    <p><strong>Capital city:</strong>kigali</p>
+                    <p><strong>Language:</strong>Kinyarwanda</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="country-header">
+                       <img src="https://restcountries.eu/data/deu.svg" style="width: 300px;height:200px;" alt="Germany">
+                   </div>
+                   <div class="card-body">
+                   <h2>Germany</h2>
+                   <p><strong>Population: </strong>677766</p>
+                   <p><strong>Region:</strong>Africa</p>
+                   <p><strong>Capital city:</strong>kigali</p>
+                   <p><strong>Language:</strong>Kinyarwanda</p>
+                   </div>
+               </div> -->
+               
+            </div>
+        </section>
+    <script src="search_countries.js"></script> 
+</body>
+</html>

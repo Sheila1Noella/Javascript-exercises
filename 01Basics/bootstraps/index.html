@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/validation.js"></script>
+    <title>Registration Form</title>
+   <!-- <link rel="stylesheet" href="styles.css"> -->
+   <link href="css/bootstrap.min.css" rel = stylesheet>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>LOGIN FORM with BOOTSTRAP</title> 
+</head>
+<body>
+   <h1 style="margin-left: 30%;" class="">Register Here</h1>
+   <div class="container">
+       <p id="message"></p>
+       
+    <form action="" method="post">
+        <div class="row">
+                <div class="col-sm-6">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="fname" name="first name" class="form-control"  placeholder="Enter First Name" required>
+                    <i class="fas fa-check-circle"></i><i class="fas fa-exclamation-circle"></i>
+                </div>
+                <div class="col-sm-6">
+                    <label for="Last_name">Last_name</label>
+                    <input type="text" id="lname" name="lastname" class="form-control" placeholder="Enter Last Name" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="National ID">National ID</label>
+                    <input type="text" id="nid" name="nationalid" class="form-control" placeholder="Enter your ID" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="Phone_number">Phone number</label>
+                    <input type="number" id="pnum" name="phonenumber" class="form-control" placeholder="070000000" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="password">Password</label>
+                    <input type="password" id="pwd" name="password" class="form-control" placeholder="Enter your password">
+                </div>
+                <div class="col-sm-6">
+                    <label for="cpassword">Confirm Password</label>
+                    <input type="password" id="cpwd" name="cpassword" class="form-control" placeholder="Confirm your password">
+                </div>
+                <div class="col-sm-4" style="margin-top:10px; margin-left: 45%;">
+                    <button type="button" class="btn btn-primary" onclick= "validation()" value="Register" name="Register">Register</button>
+                    <!-- <input type="submit" onclick="validation()" name="Register" class="btn btn-primary"> -->
+                </div>
+        </div>
+    </form>
+   </div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --backrgound-el: hsl(0, 0%, 100%)
+
+}
+body{
+    padding: 25px;
+    background-color: white;
+    color:grey;
+    font-size: 25px;
+}
+
+header{
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding: 30px;
+    position: relative;
+}
+.img{
+    width: 100%;
+    height: 100%;
+}
+.dark-mode{
+    background-color:hsl(207, 26%, 17%);
+    --backrgound-el: hsl(0, 0%, 100%)
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball{
+    transform: translatex(24px);
+}
+.label{
+    height:20px;
+    width: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(7, 7, 82);
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+}
+
+.ball{
+    background-color: #fff;
+    border-radius: 40%;
+    position: absolute;
+    top: 0.3px;
+    left: 0.4px;
+    height: 20px;
+    width: 25px;
+    transition: transform 0.2s linear;
+}
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f1c40f;
+}
+.search{
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    padding: 25px;
+    min-width: 300px;
+}
+.card {
+    background-color: rgb(31, 21, 21);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    max-width: 300px;
+    margin: 20px;
+    cursor:pointer;
+    width: 300px;
+} 
+.card-body{
+    padding: 30px;
+    
+}
+.card-body h2{
+    margin-top:0;
+}
+/* drop down styling */
+.dropdown{
+    background-color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 25px;
+    position: relative;
+}
+.dropdown .fa-chevron-down{
+    margin-left: 10px;
+}
+.dropdown ul{
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+    display: none;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    width: 100%;
+}
+.dropdown.open ul{
+    display: block;
+}
+.dropdown ul li{
+    margin: 5px 0;
+}
+
+.countries{
+    justify-content: center;
+
+}
+.modal{
+    background-color: var(--backrgound-el);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.modal img{
+    max-width: 300px;
+}
+.modal-body{
+    padding: 30px;
+}
+.btn-close{
+    border: none;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    cursor: pointer;
+    right: 20px;
+}
