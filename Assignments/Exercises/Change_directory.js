@@ -32,7 +32,7 @@ function commands(codes) {
             break;
     }   
 }
-// commands('pwd');
+commands('pwd');
 commands('cd..');
 console.log(pushingin);
 commands('cd ff/jj/hg');
