@@ -1,5 +1,19 @@
 #clock{
-    margin: 200px;
+    margin-left: 200px;
+    margin-top: 200px;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(105, 105, 161);
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: rgb(123, 123, 230);
+    font-family: 'Algerian';
+}
+.chrono{
+    margin-left: 200px;
+    font-size: 25px;
     height: 50px;
     width: 300px;
     border-radius: 20px;

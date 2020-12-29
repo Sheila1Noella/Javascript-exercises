@@ -7,7 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="clock"></h1>
+
+    <h1 id="clock">
+        <span style="color: beige;">Time</span>
+    </h1>
+    <form name="chronoForm" class="chrono">
+        <div id="chronotime">0:00:00:00</div>
+        <input type="button" name="startstop" value="START" onClick="chronomStart()"/>
+        <input type="button" name="reset" value="RESET" onClick="chronomReset()"/>
+    </form>
     <script src="script.js"></script>
+    <script src="script1.js"></script>
 </body>
 </html>
