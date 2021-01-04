@@ -77,7 +77,7 @@
         if (isNaN(resultNum)) { // If result is not a number; set off by, eg, double-clicking operators
           resultNum = "You broke it!";
         } else { // If result is infinity, set off by dividing by zero
-          resultNum = "Look at what you've done";
+          resultNum = "Look at what byou've done";
           el('#calculator').classList.add("broken"); // Break calculator
           el('#reset').classList.add("show"); // And show reset button
         }
